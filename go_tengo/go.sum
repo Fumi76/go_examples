@@ -1,0 +1,4 @@
+github.com/d5/tengo/v2 v2.7.0 h1:oAGQ+gcas0/T0bdqvNxfKzjOJhpQRwceWIF5gldB3aM=
+github.com/d5/tengo/v2 v2.7.0/go.mod h1:XRGjEs5I9jYIKTxly6HCF8oiiilk5E/RYXOZ5b0DZC8=
+github.com/go-errors/errors v1.1.1 h1:ljK/pL5ltg3qoN+OtN6yCv9HWSfMwxSx90GJCZQxYNg=
+github.com/go-errors/errors v1.1.1/go.mod h1:psDX2osz5VnTOnFWbDeWwS7yejl+uV3FEWEp4lssFEs=

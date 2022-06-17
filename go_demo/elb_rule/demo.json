@@ -1,0 +1,20 @@
+{
+    "ListenerArn": "arn:aws:elasticloadbalancing:ap-northeast-1:466602196846:listener/app/demo/f5bcac1ff421457c/95b5ffae03e7d0e7",
+    "Conditions": [
+        {
+            "Field": "path-pattern",
+            "Values": [
+                "/app/*"
+            ]
+        }
+    ],
+    "Priority": 100,
+    "Actions": [
+        {
+            "Type": "forward",
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:ap-northeast-1:466602196846:targetgroup/demo/0058609f494c3d6c",
+            "ForwardConfig": {
+            }
+        }
+    ]
+}

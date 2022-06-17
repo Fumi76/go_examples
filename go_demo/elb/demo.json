@@ -1,0 +1,19 @@
+{
+    "Name": "demo",
+    "Subnets": [
+        "subnet-0bd9ac325c66633a7",
+        "subnet-037f00f35098794e4"
+    ],
+    "SecurityGroups": [
+        "sg-0d0895c751ba2b76f"
+    ],
+    "Scheme": "internal",
+    "Tags": [
+        {
+            "Key": "Hoge",
+            "Value": "Foo"
+        }        
+    ],
+    "Type": "application",
+    "IpAddressType": "ipv4"
+}

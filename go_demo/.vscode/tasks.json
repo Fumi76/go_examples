@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "skeleton ecs-register-task-definition",
+            "type": "shell",
+            "command": "aws ecs register-task-definition --generate-cli-skeleton > skeleton_ecs_task_definition.json",
+            "problemMatcher": []
+        },
+        {
+            "label": "skeleton ecs-create-service",
+            "type": "shell",
+            "command": "aws ecs create-service --service-name demo --generate-cli-skeleton > skeleton_ecs_service.json",
+            "problemMatcher": []
+        },
+        {
+            "label": "create ecs-create-service",
+            "type": "shell",
+            "command": "aws ecs create-service --cli-input-json file://hoge.json",
+            "problemMatcher": []
+        },
+        {
+            "label": "create ecs-register-task-definition",
+            "type": "shell",
+            "command": "aws ecs register-task-definition --cli-input-json file://hoge.json",
+            "problemMatcher": []
+        },
+        {
+            "label": "skeleton elbv2-create-target-group",
+            "type": "shell",
+            "command": "aws elbv2 create-target-group --generate-cli-skeleton > skeleton_target_group.json",
+            "problemMatcher": []
+        },        
+        {
+            "label": "create elbv2-create-target-group",
+            "type": "shell",
+            "command": "aws elbv2 create-target-group --cli-input-json file://demo.json",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+pre {
+    font-family: Calibri;
+    font-size: 18px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: mintcream;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+

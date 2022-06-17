@@ -1,0 +1,10 @@
+https://helm.sh/docs/topics/advanced/
+
+https://pkg.go.dev/helm.sh/helm/v3/pkg/action
+
+内部的にはkubernetesのgoクライアントをしている模様
+https://github.com/kubernetes/client-go#compatibility-client-go---kubernetes-clusters
+
+
+Go Modules Reference
+https://go.dev/ref/mod

@@ -1,0 +1,54 @@
+# 大見出し
+
+https://daringfireball.net/projects/markdown/syntax
+
+It's *the main function* that does it.
+
+It's **the main function** that does it.
+
+* 箇条書き１
+* 箇条書き２
+
+Table
+
+Name    | Age
+--------|------
+Bob     | 27
+Alice   | 23
+
+
+```go
+func getTrue() bool {
+    return true
+}
+```
+
+## 中見出し
+
+this is markdown.
+
+    int main(void){
+    }
+
+this `main` function is the entrypoint of a program.
+
+```c
+int main(void)
+```
+function is the entrypoint to a program.
+
+hello, world.
+
+https://github.com/psychedelicnekopunch/go-sample
+
+[Goのサンプル](https://github.com/psychedelicnekopunch/go-sample)
+
+[自分のサイトへのリンク１](/hoge/foo/bar)
+
+```go
+func getTrue() bool {
+    fmt.Println("Hi")
+    return true
+}
+```
+

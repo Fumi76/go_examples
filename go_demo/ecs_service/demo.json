@@ -1,0 +1,35 @@
+{
+    "cluster": "demo",
+    "serviceName": "demo",
+    "taskDefinition": "arn:aws:ecs:ap-northeast-1:466602196846:task-definition/demo:11",
+    "loadBalancers": [
+    ],
+    "serviceRegistries": [
+    ],
+    "desiredCount": 0,
+    "launchType": "FARGATE",
+    "platformVersion": "LATEST",
+    "deploymentConfiguration": {
+        "maximumPercent": 151,
+        "minimumHealthyPercent": 100
+    },
+    "placementConstraints": [
+    ],
+    "placementStrategy": [
+    ],
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "subnet-0d7e717e18968877a"
+            ],
+            "securityGroups": [
+                "sg-07e4f9fe619874be4"
+            ],
+            "assignPublicIp": "DISABLED"
+        }
+    },
+    "schedulingStrategy": "REPLICA",
+    "tags": [
+    ],
+    "enableECSManagedTags": false
+}

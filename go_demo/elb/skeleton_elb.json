@@ -1,0 +1,24 @@
+{
+    "Name": "",
+    "Subnets": [
+        ""
+    ],
+    "SubnetMappings": [
+        {
+            "SubnetId": "",
+            "AllocationId": ""
+        }
+    ],
+    "SecurityGroups": [
+        ""
+    ],
+    "Scheme": "internet-facing",
+    "Tags": [
+        {
+            "Key": "",
+            "Value": ""
+        }
+    ],
+    "Type": "network",
+    "IpAddressType": "ipv4"
+}

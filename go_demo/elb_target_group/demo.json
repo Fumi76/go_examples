@@ -1,0 +1,18 @@
+{
+    "Name": "demo",
+    "Protocol": "HTTP",
+    "Port": 80,
+    "VpcId": "vpc-0e20854517f27a2ff",
+    "HealthCheckProtocol": "HTTP",
+    "HealthCheckPort": "80",
+    "HealthCheckEnabled": true,
+    "HealthCheckPath": "/",
+    "HealthCheckIntervalSeconds": 5,
+    "HealthCheckTimeoutSeconds": 2,
+    "HealthyThresholdCount": 2,
+    "UnhealthyThresholdCount": 2,
+    "Matcher": {
+        "HttpCode": "200"
+    },
+    "TargetType": "ip"
+}

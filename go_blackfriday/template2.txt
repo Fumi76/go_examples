@@ -1,0 +1,6 @@
+```go
+func getTrue() bool {
+    fmt.Println("Hi")
+    return true
+}
+```

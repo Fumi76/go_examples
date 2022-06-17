@@ -1,0 +1,40 @@
+{
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/xvda",
+            "Ebs": {
+                "DeleteOnTermination": true
+            }
+        }
+    ],
+    "ImageId": "ami-0f310fced6141e627",
+    "InstanceType": "t2.micro",
+    "KeyName": "my-keypair",
+    "MaxCount": 1,
+    "MinCount": 1,
+    "Monitoring": {
+        "Enabled": true
+    },
+    "Placement": {
+        "AvailabilityZone": "ap-northeast-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+    },
+    "SecurityGroupIds": [
+        "sg-0e3b0b9daa938f2fc"
+    ],
+    "SubnetId": "subnet-0914bc90e3fefb120",
+    "UserData": "",
+    "DryRun": false,
+    "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::466602196846:instance-profile/instance-profile-1"
+    },
+    "InstanceInitiatedShutdownBehavior": "stop",
+    "NetworkInterfaces": [
+        {
+            "AssociatePublicIpAddress": true,
+            "DeleteOnTermination": true,
+            "DeviceIndex": 0
+        }
+    ]    
+}

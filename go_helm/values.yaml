@@ -1,0 +1,10 @@
+favorite:
+  drink: coffee
+  food: pizza
+aaa:
+  - bbb: 111
+     name: bbb
+  - ccc: 222
+  - ddd: 333
+     name: ddd
+
