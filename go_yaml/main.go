@@ -5,6 +5,7 @@ import (
 	"log"
 	"reflect"
 
+	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"
 )
 
@@ -34,6 +35,15 @@ func isScholar(o any) bool {
 	return true
 }
 
+func remove(s []string, r string) []string {
+	for i, v := range s {
+		if v == r {
+			return append(s[:i], s[i+1:]...)
+		}
+	}
+	return s
+}
+
 func print(o any, parent string, keys *[]string) {
 	if m2, ok := o.(map[interface{}]interface{}); ok {
 		fmt.Printf("(%v)\n", reflect.TypeOf(m2))
@@ -44,6 +54,9 @@ func print(o any, parent string, keys *[]string) {
 				key := parent + "." + fmt.Sprintf("%v", k2)
 				fmt.Printf("key %v\n", key)
 				if flag {
+					if slices.Contains(*keys, parent) {
+						*keys = remove(*keys, parent)
+					}
 					*keys = append(*keys, key)
 				}
 				print(v2, parent+"."+fmt.Sprintf("%v", k2), keys)
@@ -63,6 +76,9 @@ func print(o any, parent string, keys *[]string) {
 			if len(parent) > 0 {
 				key := parent + "." + fmt.Sprintf("%v", k4)
 				if flag {
+					if slices.Contains(*keys, parent) {
+						*keys = remove(*keys, parent)
+					}
 					*keys = append(*keys, key)
 				}
 				fmt.Printf("key %v\n", key)
