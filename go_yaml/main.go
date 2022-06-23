@@ -127,6 +127,7 @@ func validateKeys(base *map[string]interface{}, input *map[string]interface{}) [
 				if a2, ok := val2.([]interface{}); ok {
 					// 配列の場合
 					if len(a) > 0 && len(a2) > 0 {
+						// 配列の１つ目の要素がmapの場合、１つ目のmap同士を検証する
 						if m3, ok := a[0].(map[string]interface{}); ok {
 							if m4, ok := a2[0].(map[string]interface{}); ok {
 								e2 := validateKeys(&m4, &m3)
